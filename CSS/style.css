@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
-* {
-    outline: 1px solid #ff0000;
-}
+/** {*/
+/*    outline: 1px solid #ff0000;*/
+/*}*/
 
 html {
     font-family: sans-serif;
@@ -67,3 +67,26 @@ a:hover {
     color: #3f5170;
 }
 
+.keyvisual {
+    margin: 15px 0 0 0;
+}
+
+.menu-photo {
+    text-align : center;
+}
+
+/*店舗情報のテーブル*/
+.info {
+    border-collapse: collapse;
+}
+
+.info th, .info td {
+    padding: 8px;
+    border: 1px solid #bec2c7;
+    text-align left;
+}
+
+.info th {
+    background-color: #dde2ea;
+    color: #3f5170;
+}
