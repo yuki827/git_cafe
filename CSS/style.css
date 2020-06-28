@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+* {
+    outline: 1px solid #ff0000;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+html * {
+    box-sizing:border-box;
+}
+
+body {
+    background-image: url("../image/sakura.gif");
+    background-repeat：repeat-y；
+}
+
+h2 {
+    color:#3f5170;
+    font-size: 22px;
+    border-bottom: 3px dotted #3f5170;
+    margin:20px 0px 20px 0px
+    padding-top:5px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+a:hover {
+    color: #dc143c;
+}
+
+.logo {
+    margin: 50px 0 40px 0;
+    line-height:0;
+    text-align:center;
+}
+
+.nav li {
+    display: inline;
+    list-stsyle-type:none;
+    padding-right: 30px;
+}
+
+.nav ul {
+    margin: 0 0 0 0;
+    padding: 20px 10px 15px 20px;
+}
+
