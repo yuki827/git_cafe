@@ -4,6 +4,8 @@
 /*    outline: 1px solid #ff0000;*/
 /*}*/
 
+
+
 html {
     font-family: sans-serif;
 }
@@ -23,12 +25,22 @@ body {
     max-width: 960px;
 }
 
+h1 { 
+    font-family: 'Marck Script', cursive;
+    font-size:50px;
+}
+
 h2 {
     color:#3f5170;
     font-size: 22px;
-    border-bottom: 3px dotted #3f5170;
-    margin:20px 0px 20px 0px
+ 
+    margin:20px px 20px 0px
     padding-top:5px;
+    padding-left:5px;
+}
+
+h4 {
+       border-bottom: 3px dotted #3f5170;
 }
 
 p {
@@ -39,16 +51,36 @@ a:hover {
     color: #dc143c;
 }
 
+
+
+.img {
+    max-width: 100%;
+    height: auto;
+}
+
 .logo {
     margin: 50px 0 40px 0;
     line-height:0;
     text-align:center;
 }
 
+
+
 .nav li {
     display: inline;
     list-stsyle-type:none;
-    padding-right: 30px;
+    padding-right: 100px;
+    padding-top:0;
+    font-size:20px;
+    /*border-bottom: 3px dotted #3f5170;*/
+    color:#000000;
+}
+
+.nav {
+   /*background-color:#006600;*/
+   text-align : center;
+   
+    
 }
 
 .nav ul {
@@ -56,16 +88,33 @@ a:hover {
     padding: 20px 10px 15px 20px;
     background-image: url("../image/Line.png"));
     background-repeat: repeat-x;
+    border-bottom:1px solid #3f5170;
+}
+
+.nav a:link {
+    color:#000000;
+    text-decoration: none ;
+}
+
+.nav a:visited {
+    color:#000000;
+}
+
+.nav a:hover {
+    color:#FF3399;
+}
+
+.drink-menu {
+    display: inline-block
 }
 
 .footer {
-    background-image: url("../image/Line.png");
-    background-repeat: no-repeat;
     margin-top: 30px;
     padding: 80px 15px 20px 15px;
     font-size:12px;
     color: #3f5170;
 }
+
 
 .keyvisual {
     margin: 15px 0 0 0;
@@ -89,4 +138,43 @@ a:hover {
 .info th {
     background-color: #dde2ea;
     color: #3f5170;
+}
+
+/*メニューの写真と説明文を横に並べる*/
+/*レスポンシブ*/
+.menu-item {
+    display:flex;
+    border-bottom: 1px dashed #bec2c7;
+    padding:20px 8px;
+}
+
+.menu-photo {
+    margin-right: 16px;
+    flex: 1 1 auto;
+}
+
+.menu-text {
+    flex: 0 0 336px;
+}
+
+/*スマートフォン向け   */
+@media (max-width: 767px){
+  .logo {
+      font-size:40px;
+  }
+  .nav li {
+      display: block;
+  }
+  .menu-item {
+      display: block;
+  }
+  .menu-photo {
+      margin-right: 0;
+      width: 100%;
+  }
+  .menu-text {
+      width: 100%;
+  }
+ 
+ 
 }
