@@ -5,7 +5,7 @@
 <meta name="viewport" content="windth=devoce-width,initial-scale=1">
 <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
-<title>FlowerCafeについて | FlowerCafe </title>
+<title>お問い合わせ | FlowerCafe </title>
 <link rel="stylesheet" href=CSS/style.css>
 </head>
 <body>
@@ -26,7 +26,39 @@
     <!--ヘッダーここまで-->
     <!--メイン-->
     <main>
-      
+      <h2>お問い合わせ</h2>
+      <form method="GET" action="result.html">
+        <div>
+          お問い合わせの種類<br>
+          <select name="kind">
+            <option value="reservation">ご予約</option>
+            <option value="event">イベントについて</option>
+            <option value="contact">その他のお問い合わせ</option>
+          </select>
+        </div>
+        <div>
+          FlowerCafeにご来店いただいたことはありますか。<br>
+          <input type="radio" name="first" value="yes" chaked>はい
+          <input type="radio" name="first" value="no"> いいえ
+        </div>
+        <div>
+        　当カフェをお知りになったきっかけは？<br>
+        　<input type="checkbox" name="bow" value="friends">知り合いの紹介で
+        　<input type="checkbox" name="bow" value="magazine">雑誌・Webサイトを見て
+        </div>
+        <div>
+          お問い合わせ件名<br>
+          <input tyoe="text" name="subject" placeholder="お問い合わせ">
+        </div>
+        <div>
+          お問い合わせの具体的な内容<br>
+          <textarea name="message"></textarea>
+        
+        </div>
+        <div>
+          <input type="submit" name="submit" value="送信">
+        </div>
+      </form>
     </main>
     <!--メインここまで-->
     <!--フッター-->
