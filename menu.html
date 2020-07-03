@@ -7,6 +7,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
 <title>Menu｜FlowerCafe</title>
 <link rel="stylesheet" href="CSS/style.css">
+<link rel="stylesheet" href="slick.css">
+<link rel="stylesheet" href="slick-theme.css">
 </head>
 <body>
   <div class="wrapper">
@@ -29,9 +31,20 @@
       <h2>Menu</h2>
       <div class="menu-block">
         <div class="menu-item">
-          <div class="menu-photo">
-            <img src="image/rose-coffee.jpg" alt="珈琲"width="100%"hight="100%">
+          <div class="slick1">
+            <div><img src="image/rose-coffee.jpg" alt=""></div>
+            <div><img src="image/tea.jpg" alt=""></div>
+            <div><img src="image/orange.jpg" alt=""></div>
           </div>
+     
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+          <script src="slick.min.js"></script>
+          <script type="text/javascript">
+            $(function(){
+               $('.slick1').slick({
+               });
+            });
+          </script>
           <div class="menu-text">
             <h3>ドリンクメニュー</h3>
             <p>FlowerCafeは多様な珈琲に加え、紅茶にもこだわりを持っております。
@@ -42,35 +55,37 @@
         </div>
         </div>
         
-        <div class="menu-item">
-          <div class="menu-photo">
-            <img src="image/cake.jpg" alt="ケーキ" width="100%"hight="100%">
+          <div class="menu-item">
+          <div class="slick1">
+            <div><img src="image/cake.jpg" alt=""></div>
+            <div><img src="image/chokocake.jpg" alt=""></div>
+            <div><img src="image/berycake.jpg" alt=""></div>
           </div>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+          <script src="slick.min.js"></script>
+          <script type="text/javascript">
+            $(function(){
+               $('.slick1').slick({
+               });
+            });
+          </script>
           <div class="menu-text">
             <h3>スイーツメニュー</h3>
             <p>FlowerCafeのスイーツはすべて当店で召し上がって頂く珈琲や紅茶と合うようにこだわっております。保存料などを使わず一つひとつ手作りしています。FlowerCafeオリジナルの味をお楽しみください。</p>
             <p>各&yen;500-</p>
           </div>
-        </div>
-        
-        <!--<div class="menu-item">-->
-        <!--  <div class="menu-photo">-->
-        <!--    <img src="" alt="">-->
-        <!--  </div>-->
-        <!--  <div class="menu-text">-->
-        <!--    <h3></h3>-->
-        <!--    <p></p>-->
-        <!--    <p>&yen;-</p>-->
-        <!--  </div>-->
-        <!--</div>-->
+       
         
       </div>
     <!--メインここまで-->
     <!--フッターここまで-->
     </main>
     <footer class="footer">
+      <!--<div class="line">-->
+      <!--<img src="image/hanaline.png" alt="花のライン" width="100%">-->
+      <!--</div>-->
+      <p>&copy;Copyright Frower Cafe. All right reserved.</p>
+    </footer>
   </div>
-　　<p>&copy;Copyright Frower Cafe. All right reserved.</p>
-　　</footer>
 </body>
 </html>
