@@ -141,6 +141,8 @@ a:hover {
     margin: 15px 0 0 0;
 }
 
+
+
 .menu-photo {
     text-align : center;
 }
@@ -174,6 +176,20 @@ a:hover {
     flex: 0 0 336px;
 }
 
+.slick1{
+    width: 550px;
+    height: 450px;
+    margin: 0 auto;
+    margin-right: 30px;
+    flex: 1 1 auto;
+}
+
+.slick-prev:before,
+.slick-next:before {
+color: #556b2f;
+}
+
+
 /*スマートフォン向け   */
 @media (max-width: 767px){
   .logo {
@@ -192,26 +208,18 @@ a:hover {
   .menu-text {
       width: 100%;
   }
-}
-
-.slick1{
-    width: 550px;
-    height: 450px;
-    margin: 0 auto;
+  .slick1{
+    max-width: 90%;
+    height:auto;
+    /*margin: 0 auto;*/
     margin-right: 30px;
     flex: 1 1 auto;
+    margin : 0 auto
+}
+  .map {
+    max-width: 100%;
+    height:auto;
+  }
+  
 }
 
-.slick-prev:before,
-.slick-next:before
-{
-    font-family: 'slick';
-    font-size: 20px;
-    line-height: 1;
-
-    opacity: .75;
-    color: black;
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
